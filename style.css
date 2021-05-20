@@ -155,7 +155,7 @@ body {
 
 @media (max-width: 767px) {
     .container {
-        height: 100vh;
+        height: 110vh;
     }
 
     .main-wrapper {
