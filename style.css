@@ -1,0 +1,208 @@
+
+body {
+    background: #161616;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+}
+
+.main-wrapper {
+    position: relative;
+    width: calc(100% - 160px);
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header--logo {
+    width: 287px;
+}
+
+.header--logo-mobile {
+    display: none;
+}
+
+.header--btn {
+    width: 196px;
+    height: 32px;
+    background: linear-gradient(99.55deg, #D001FF 0%, #E68DFF 100%);
+    border-radius: 24px;
+    color: #fff;
+    font-family: 'Manrope';
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content--title {
+    color: #fff;
+    font-family: 'Manrope';
+    font-size: 64px;
+    font-weight: 800;
+    max-width: 569px;
+    line-height: 64px;
+    margin-bottom: 80px;
+}
+
+.content--title .purple {
+    background-color: #D001FF;
+    background-image: linear-gradient(45deg, #D001FF, #E68DFF);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.content--description {
+    color: #fff;
+    font-family: 'Manrope';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 440px;
+    margin-bottom: 60px;
+}
+
+.img--right {
+    position: absolute;
+    width: 800px;
+    top: calc(50vh - 340px);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 116px;
+}
+
+.footer img {
+    width: 180px;
+}
+
+.footer img:first-of-type {
+    margin-right: 38px;
+}
+
+@media (max-width: 1450px) {
+    .content--title {
+        color: #fff;
+        font-family: 'Manrope';
+        font-size: 64px;
+        font-weight: 800;
+        max-width: 569px;
+        line-height: 64px;
+        margin-bottom: 50px;
+    }
+
+    .img--right {
+        position: absolute;
+        width: initial;
+        height: 68.3vh;
+        top: 15.9vh;
+        right: 0;
+    }
+}
+
+@media (max-width: 1250px) {
+    .content--title {
+        font-size: 42px;
+        max-width: 369px;
+        line-height: 42px;
+    }
+
+    .img--right {
+        position: absolute;
+        width: initial;
+        height: 48.3vh;
+        top: 25.9vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .img--right {
+        z-index: -1;
+        opacity: .4;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        height: 100vh;
+    }
+
+    .main-wrapper {
+        width: calc(100% - 40px);
+    }
+
+    .header--logo {
+        display: none;
+    }
+
+    .header--logo-mobile {
+        display: block;
+        width: 42px;
+    }
+
+    .header--btn {
+        width: 146px;
+        font-size: 12px;
+    }
+
+    .content--title {
+        font-size: 32px;
+        line-height: 32px;
+        max-width: 280px;
+        margin-bottom: 24px;
+    }
+
+    .content--description {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 286px;
+        margin-bottom: 20vh;
+    }
+
+    .img--right {
+        top: 35.9vh;
+    }
+
+    .footer {
+        height: 70px;
+    }
+
+    .footer img {
+        width: 124px;
+    }
+
+    .footer img:first-of-type {
+        margin-right: 18px;
+    }
+}
