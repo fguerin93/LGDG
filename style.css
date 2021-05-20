@@ -156,6 +156,7 @@ body {
 @media (max-width: 767px) {
     .container {
         height: 110vh;
+        overflow: initial;
     }
 
     .main-wrapper {
