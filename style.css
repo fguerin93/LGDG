@@ -92,6 +92,7 @@ body {
 .img--right {
     position: absolute;
     width: 800px;
+    right: 0;
     top: calc(50vh - 340px);
 }
 
